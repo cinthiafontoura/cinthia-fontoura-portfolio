@@ -58,6 +58,12 @@ header {
     border-bottom: none;
 }
 
+/* Introduction section */
+
+#intro {
+    height: 70vh;
+}
+
 .btn {
     padding: 12px 14px;
     border-radius: 8px;
@@ -68,6 +74,12 @@ header {
     background: #ac40f3;
 }
 
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
 
 
 section {
