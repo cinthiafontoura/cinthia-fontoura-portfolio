@@ -9,10 +9,10 @@
 body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
-    color: #3E3D3F;
-    background: #F0E3FF;
+    color: #3e3d3f;
+    background: #f0e3ff;
 }
 
 .container {
@@ -22,10 +22,14 @@ body {
     margin: 0 auto; 
 }
 
-/* Buttons */
+h2 {    
+    font-size: 200%;
+    padding-bottom: 20px;
+}
 
+/* Buttons */
 .btn {
-    padding: 12px 14px;
+    padding: 12px 20px;
     border-radius: 8px;
     background: #d089ff;    
 }
@@ -84,7 +88,6 @@ header {
 }
 
 /* Introduction Section */
-
 #intro {
     height: 70vh;
     display: flex;
@@ -101,16 +104,115 @@ h1 span {
     font-size: 35%;
 }
 
-#intro h2 {    
-    font-size: 2.35rem;
-    padding-bottom: 20px;
-}
-
-
 #intro img {
     width: 400px;
     border-radius: 50%;
     border: 4px solid #ff8a98;
+}
+
+/* Projects Section */
+.bg-one {
+    height: 150px;   
+    background-image: linear-gradient(5deg, #fab4bc 48.69%, #f0e3ff 49%); 
+    margin-top: -30px;
+}
+
+#projects {    
+    background-color: #fab4bc;
+}
+
+#projects h2 {
+    margin: -50px 0 40px;
+}
+
+#project-one,
+#project-three {
+    display: flex; 
+    justify-content: center;  
+    padding-bottom: 150px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#project-two {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 150px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#project-one .project-info,
+#project-three .project-info {
+    margin: 0 30px 0 -50px;
+}
+
+#project-two .project-info {
+    margin: 0 -50px 0 30px;
+    /* text-align: right; */
+}
+
+#projects h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;    
+    color: #150e72;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.project-technologies {
+    font-size: 2rem;
+    color: #fff;    
+}
+
+.project-technologies i {
+    margin: 20px 5px 20px 0;
+}
+
+.project-screens {
+    position: relative;
+}
+
+.desktop {    
+    border: 3px solid #d089ff;
+    border-radius: 4px;
+    width: 450px;
+    height: 250px;      
+}
+
+.mobile {    
+    border: 3px solid #d089ff;
+    border-radius: 4px;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+}
+
+#project-one .desktop {
+    background: url('../images/oops-desktop.bmp') no-repeat bottom center / cover;        
+}
+
+#project-one .mobile {    
+    background: url('../images/oops-mobile.bmp') no-repeat center center / cover;
+    right: -50px;    
+}
+
+#project-two .desktop {
+    background: url('../images/restaurant104-desktop.bmp') no-repeat center center / contain;
+}
+
+#project-two .mobile {
+    background: url('../images/restaurant104-mobile.bmp') no-repeat top center / cover;
+    left: -50px;    
+}
+
+#project-three .desktop {
+    background: url('../images/tindog-desktop.bmp') no-repeat bottom center / cover;        
+}
+
+#project-three .mobile {    
+    background: url('../images/tindog-mobile.bmp') no-repeat center center / cover;
+    right: -50px;    
 }
 
 
