@@ -149,7 +149,6 @@ h1 span {
 
 #project-two .project-info {
     margin: 0 -50px 0 30px;
-    /* text-align: right; */
 }
 
 #projects h3 {
@@ -160,7 +159,7 @@ h1 span {
 }
 
 .project-technologies {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;    
 }
 
