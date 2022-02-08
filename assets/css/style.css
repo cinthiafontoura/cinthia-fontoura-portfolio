@@ -214,9 +214,32 @@ h1 span {
     right: -50px;    
 }
 
-
 /* About Section */
+#about h2 {
+    margin: 50px 0;
+}
 
+#about .content {
+    display: flex;
+}
+#img-about {
+    width: 300px;
+    border-radius: 4px;
+}
+
+.about-text {
+    margin-left: 50px;
+}
+
+.about-text p {
+    margin-bottom: 20px;    
+    line-height: 1.5;
+}
+
+.about-text i {
+    font-size: 2rem; 
+    margin: 0 5px 40px 0;   
+}
 
 
 
