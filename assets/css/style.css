@@ -7,7 +7,7 @@
 }
 
 body {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
@@ -122,7 +122,7 @@ h1 span {
 }
 
 #projects h2 {
-    margin: -50px 0 40px;
+    margin: -70px 0 70px;
 }
 
 #project-one,
@@ -172,14 +172,14 @@ h1 span {
 }
 
 .desktop {    
-    border: 3px solid #d089ff;
+    border: 3px solid #150e72;
     border-radius: 4px;
     width: 450px;
     height: 250px;      
 }
 
 .mobile {    
-    border: 3px solid #d089ff;
+    border: 3px solid #150e72;
     border-radius: 4px;
     width: 100px;
     height: 200px;
@@ -197,7 +197,7 @@ h1 span {
 }
 
 #project-two .desktop {
-    background: url('../images/restaurant104-desktop.bmp') no-repeat center center / contain;
+    background: url('../images/restaurant104-desktop.bmp') no-repeat center center / cover;
 }
 
 #project-two .mobile {
@@ -213,6 +213,9 @@ h1 span {
     background: url('../images/tindog-mobile.bmp') no-repeat center center / cover;
     right: -50px;    
 }
+
+
+/* About Section */
 
 
 
