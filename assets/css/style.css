@@ -28,17 +28,20 @@ h2 {
 }
 
 /* Buttons */
-.btn {
+.btn,
+input[type="submit"] {
     padding: 12px 20px;
     border-radius: 8px;
-    background: #d089ff;    
+    background: #d089ff;   
 }
 
-.btn:hover {
+.btn:hover,
+input[type="submit"]:hover {
     background: #ac40f3;
 }
 
-.btn a {
+.btn a,
+input[type="submit"] {
     text-decoration: none;
     color: #fff;
     font-weight: 400;
@@ -241,5 +244,25 @@ h1 span {
     margin: 0 5px 40px 0;   
 }
 
+/* Contact Section */
+#contact h2 {
+    margin: 100px 0 50px;
+}
 
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    margin: 10px auto 20px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ac40f3;
+    font-size: 20px;
+    background-color: #ddbff1;
+    color: #fff;    
+}
 
+input::placeholder {
+    color: #fff;
+}
