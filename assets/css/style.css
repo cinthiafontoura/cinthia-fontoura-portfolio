@@ -260,9 +260,9 @@ textarea {
     border: 1px solid #ac40f3;
     font-size: 20px;
     background-color: #ddbff1;
-    color: #fff;    
+    color: #3c5b9d;    
 }
 
 input::placeholder {
-    color: #fff;
+    color: #3c5b9d;
 }
