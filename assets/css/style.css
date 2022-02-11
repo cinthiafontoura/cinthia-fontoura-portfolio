@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@300;400&display=swap');
 
+:root {
+    --color-primary: #D089FF;
+    --color-primary-lighter: #EFD6FF;
+    --color-primary-darker: #684580;
+    --color-primary-medium: #A66ECC;
+    --color-primary-gray: #776B80;
+    --color-text-light: #fff;
+    --color-text-dark: #383838;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -262,3 +272,24 @@ input::placeholder {
 
 
 /* Footer */
+footer {
+    background-color: var(--color-primary-darker);
+    padding: 30px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    padding: 20px 30px 40px;
+}
+
+footer li a {
+    font-size: 2rem;
+    color: var(--color-primary-lighter);
+}
+
+footer p {
+    font-size: 80%;
+    color: var(--color-primary-lighter);
+}
