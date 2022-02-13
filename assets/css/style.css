@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
 
 :root {
     /* Colours */
@@ -7,8 +7,8 @@
     --color-primary-darker: #684580;
     --color-primary-medium: #A66ECC;
     --color-primary-gray: #776B80;
-    --color-text-light: #fff;
-    --color-text-dark: #383838;
+    --color-light: #FFF;
+    --color-dark: #383838;
     /* Icons size*/
     --icon-small: 1.2rem;
     --icon-medium: 1.6rem;
@@ -26,12 +26,12 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #3e3d3f;
-    background: #f0e3ff;
+    color: var(--color-primary-darker);
+    background: var(--color-primary-lighter);
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     padding: 0 10px;    
     margin: 0 auto; 
@@ -43,24 +43,21 @@ h2 {
 }
 
 /* Buttons */
-.btn,
-input[type="submit"] {
+.btn {
     padding: 12px 20px;
+    border: 2px solid transparent;
     border-radius: 8px;
-    background: #d089ff;   
-}
-
-.btn:hover,
-input[type="submit"]:hover {
-    background: #ac40f3;
-}
-
-.btn,
-input[type="submit"] {
+    background: var(--color-primary);   
     text-decoration: none;
-    color: #3e3d3f;
+    color: var(--color-dark);
     font-weight: 400;
     font-size: 90%;
+}
+
+.btn:hover {
+    background: var(--color-primary-lighter);
+    border: 2px solid var(--color-primary-darker);
+    color: var(--color-primary-darker);
 }
 
 /* Header */
@@ -77,6 +74,11 @@ header {
     margin: 20px 0;
 }
 
+#logo:hover {
+    width: 58px;
+    border: 1px solid var(--color-primary-darker);
+}
+
 #menu {
     justify-self: flex-end;
 }
@@ -89,22 +91,23 @@ header {
 
 #menu a {
     text-decoration: none;
-    color: #5d5c5f;
+    color: var(--color-primary-darker);
     font-weight: 400;
     font-size: 110%;
 }
 
 #menu a:hover {
-    border-bottom: 2px solid #000;
-    color: #000;
+    font-weight: 500;
+    color: var(--color-primary-medium);    
 }
 
 /* Introduction Section */
 #intro {
-    height: 70vh;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 10px solid var(--color-primary-lighter);
 }
 
 h1 {
@@ -119,22 +122,24 @@ h1 span {
 #intro img {
     width: 400px;
     border-radius: 50%;
-    border: 4px solid #ff8a98;
+    border: 4px solid var(--color-primary-medium);
 }
 
 /* Projects Section */
 .bg-one {
     height: 150px;   
-    background-image: linear-gradient(5deg, #fab4bc 48.69%, #f0e3ff 49%); 
+    background-image: linear-gradient(5deg, var(--color-primary-darker) 49.69%, var(--color-primary-lighter) 50%); 
     margin-top: -30px;
 }
 
 #projects {    
-    background-color: #fab4bc;
+    background-color: var(--color-primary-darker);
+    color: var(--color-primary-lighter);
 }
 
 #projects h2 {
     margin: -70px 0 70px;
+    color: var(--color-primary-lighter);
 }
 
 #project-one,
@@ -165,9 +170,13 @@ h1 span {
 
 #projects h3 {
     margin-bottom: 20px;
-    font-size: 160%;    
-    color: #150e72;
+    font-size: 160%; 
     font-family: 'Roboto Mono', monospace;
+    color: var(--color-light);
+}
+
+#projects p {
+    color: var(--color-light);
 }
 
 .project-technologies {
@@ -175,7 +184,7 @@ h1 span {
 }
 
 .project-technologies i {
-    margin: 20px 5px 20px 0;
+    margin: 20px 5px 30px 0;
 }
 
 .project-screens {
@@ -183,14 +192,14 @@ h1 span {
 }
 
 .desktop {    
-    border: 3px solid #150e72;
+    border: 3px solid var(--color-primary-medium);
     border-radius: 4px;
     width: 450px;
     height: 250px;      
 }
 
 .mobile {    
-    border: 3px solid #150e72;
+    border: 3px solid var(--color-primary-medium);
     border-radius: 4px;
     width: 100px;
     height: 200px;
@@ -225,9 +234,17 @@ h1 span {
     right: -50px;    
 }
 
+.bg-two {
+    height: 150px;   
+    background-image: linear-gradient(5deg, var(--color-primary-lighter) 48.69%, var(--color-primary-darker) 49%);
+    
+    margin-top: -50px;
+    z-index: -1;
+}
+
 /* About Section */
 #about h2 {
-    margin: 50px 0;
+    margin: -70px 0 70px;
 }
 
 #about .content {
@@ -254,25 +271,40 @@ h1 span {
 
 /* Contact Section */
 #contact h2 {
-    margin: 100px 0 50px;
+    margin: 150px 0 50px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 500;
+}
+
+.text-form {
     display: block;
     margin: 10px auto 20px;
     padding: 12px;
     width: 100%;
     border-radius: 4px;
-    border: 1px solid #ac40f3;
-    font-size: 20px;
-    background-color: #ddbff1;
-    color: #3c5b9d;    
+    border: 2px solid var(--color-primary-darker);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    background-color: var(--color-primary-lighter);
+    color: var(--color-primary-darker);
+    outline: none;    
 }
 
-input::placeholder {
-    color: #3c5b9d;
+.text-form:hover,
+.text-form:focus-visible {
+    border-color: var(--color-primary);
+}
+
+.text-form::placeholder {
+    color: var(--color-primary-medium);    
+    font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -292,6 +324,10 @@ footer li {
 footer li a {
     font-size: var(--icon-big);
     color: var(--color-primary-lighter);
+}
+
+footer li a:hover {
+    color: var(--color-primary);
 }
 
 footer p {
