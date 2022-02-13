@@ -101,6 +101,14 @@ header {
     color: var(--color-primary-medium);    
 }
 
+#menu .btn {
+    color: var(--color-dark);
+}
+
+#menu .btn:hover {
+    color: var(--color-primary-darker);
+}
+
 /* Introduction Section */
 #intro {
     height: 500px;
@@ -147,7 +155,7 @@ h1 span {
     display: flex; 
     justify-content: center;  
     padding-bottom: 150px;
-    width: 80%;
+    width: 91%;
     margin: 0 auto;
 }
 
@@ -155,7 +163,7 @@ h1 span {
     display: flex;
     flex-direction: row-reverse;
     padding-bottom: 150px;
-    width: 80%;
+    width: 91%;
     margin: 0 auto;
 }
 
@@ -184,7 +192,11 @@ h1 span {
 }
 
 .project-technologies i {
-    margin: 20px 5px 30px 0;
+    margin: 20px 10px 30px 0;
+}
+
+#projects .btn {
+    margin-right: 10px;
 }
 
 .project-screens {
@@ -275,7 +287,6 @@ h1 span {
 }
 
 form {
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -287,7 +298,7 @@ label {
     display: block;
     margin: 10px auto 20px;
     padding: 12px;
-    width: 100%;
+    width: 98%;
     border-radius: 4px;
     border: 2px solid var(--color-primary-darker);
     font-family: 'Roboto Mono', monospace;
