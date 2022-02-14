@@ -18,7 +18,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -152,28 +152,18 @@ h1 span {
 
 #project-one,
 #project-three {
-    display: flex; 
-    justify-content: center;  
-    padding-bottom: 150px;
-    width: 91%;
-    margin: 0 auto;
+    display: flex;
+    padding-bottom: 150px; 
 }
 
 #project-two {
     display: flex;
     flex-direction: row-reverse;
-    padding-bottom: 150px;
-    width: 91%;
-    margin: 0 auto;
+    padding-bottom: 150px;   
 }
 
-#project-one .project-info,
-#project-three .project-info {
-    margin: 0 30px 0 -50px;
-}
-
-#project-two .project-info {
-    margin: 0 -50px 0 30px;
+.project-info {
+    width: 50%;
 }
 
 #projects h3 {
@@ -183,8 +173,9 @@ h1 span {
     color: var(--color-light);
 }
 
-#projects p {
+.project-description {
     color: var(--color-light);
+    width: 100%;
 }
 
 .project-technologies {
@@ -201,13 +192,16 @@ h1 span {
 
 .project-screens {
     position: relative;
+    width: 50%;
 }
 
 .desktop {    
     border: 3px solid var(--color-primary-medium);
     border-radius: 4px;
     width: 450px;
-    height: 250px;      
+    height: 250px;  
+    text-align: center;   
+    position: relative;
 }
 
 .mobile {    
@@ -224,34 +218,32 @@ h1 span {
 }
 
 #project-one .mobile {    
-    background: url('../images/oops-mobile.bmp') no-repeat center center / cover;
-    right: -50px;    
+    background: url('../images/oops-mobile.bmp') no-repeat center center / cover;   
+    right: 25px;     
 }
 
 #project-two .desktop {
-    background: url('../images/restaurant104-desktop.bmp') no-repeat center center / cover;
+    background: url('../images/restaurant104-desktop.bmp') no-repeat center center / cover;    
 }
 
 #project-two .mobile {
     background: url('../images/restaurant104-mobile.bmp') no-repeat top center / cover;
-    left: -50px;    
+    left: 25px;   
 }
 
-#project-three .desktop {
-    background: url('../images/tindog-desktop.bmp') no-repeat bottom center / cover;        
-}
+/* #project-three .desktop {
+    background: url('../images/tindog-desktop.bmp') no-repeat bottom center / cover;            
+} */
 
 #project-three .mobile {    
-    background: url('../images/tindog-mobile.bmp') no-repeat center center / cover;
-    right: -50px;    
+    /* background: url('../images/tindog-mobile.bmp') no-repeat center center / cover; */
+    right: 25px;          
 }
 
 .bg-two {
     height: 150px;   
     background-image: linear-gradient(5deg, var(--color-primary-lighter) 48.69%, var(--color-primary-darker) 49%);
-    
-    margin-top: -50px;
-    z-index: -1;
+    margin-top: -50px;    
 }
 
 /* About Section */
@@ -298,7 +290,7 @@ label {
     display: block;
     margin: 10px auto 20px;
     padding: 12px;
-    width: 98%;
+    width: 100%;
     border-radius: 4px;
     border: 2px solid var(--color-primary-darker);
     font-family: 'Roboto Mono', monospace;
@@ -345,3 +337,4 @@ footer p {
     font-size: 80%;
     color: var(--color-primary-lighter);
 }
+
