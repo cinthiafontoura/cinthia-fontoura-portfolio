@@ -153,17 +153,27 @@ h1 span {
 #project-one,
 #project-three {
     display: flex;
-    padding-bottom: 150px; 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px; 
 }
 
 #project-two {
     display: flex;
+    justify-content: space-between;
     flex-direction: row-reverse;
-    padding-bottom: 150px;   
+    margin-bottom: 150px;   
 }
 
-.project-info {
+#project-one .project-info,
+#project-three .project-info {
     width: 50%;
+    margin-right: 20px;
+}
+
+#project-two .project-info {
+    width: 50%;
+    margin-left: 20px;
 }
 
 #projects h3 {
@@ -191,53 +201,7 @@ h1 span {
 }
 
 .project-screens {
-    position: relative;
     width: 50%;
-}
-
-.desktop {    
-    border: 3px solid var(--color-primary-medium);
-    border-radius: 4px;
-    width: 450px;
-    height: 250px;  
-    text-align: center;   
-    position: relative;
-}
-
-.mobile {    
-    border: 3px solid var(--color-primary-medium);
-    border-radius: 4px;
-    width: 100px;
-    height: 200px;
-    position: absolute;
-    top: 70px;
-}
-
-#project-one .desktop {
-    background: url('../images/oops-desktop.bmp') no-repeat bottom center / cover;        
-}
-
-#project-one .mobile {    
-    background: url('../images/oops-mobile.bmp') no-repeat center center / cover;   
-    right: 25px;     
-}
-
-#project-two .desktop {
-    background: url('../images/restaurant104-desktop.bmp') no-repeat center center / cover;    
-}
-
-#project-two .mobile {
-    background: url('../images/restaurant104-mobile.bmp') no-repeat top center / cover;
-    left: 25px;   
-}
-
-/* #project-three .desktop {
-    background: url('../images/tindog-desktop.bmp') no-repeat bottom center / cover;            
-} */
-
-#project-three .mobile {    
-    /* background: url('../images/tindog-mobile.bmp') no-repeat center center / cover; */
-    right: 25px;          
 }
 
 .bg-two {
