@@ -69,7 +69,7 @@
     }
   }
 
-  @media only screen and (max-width: 426px) {
+  @media only screen and (max-width: 582px) {
 
     .container {
         padding: 0 15px; 
@@ -180,7 +180,7 @@
     }
   }
 
-  @media only screen and (max-width: 376px) {
+  @media only screen and (max-width: 395px) {
     html {
         font-size: 16px;
     }
@@ -190,7 +190,7 @@
     }
   }
 
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 360px) {
     .container {
         padding: 0 10px;             
     }
