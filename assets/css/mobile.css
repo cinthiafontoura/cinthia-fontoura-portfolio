@@ -22,7 +22,7 @@
     }
 
     #intro {
-        height: 400px;
+        height: 430px;
     }
 
     h1 {
@@ -30,11 +30,11 @@
     }
 
     #intro h2 {    
-        font-size: 150%;
+        font-size: 140%;
     }    
 
     #intro img {
-        width: 250px;
+        width: 240px;
     }
 
     #projects h2 {
@@ -48,6 +48,10 @@
 
     #project-two {
         margin-bottom: 100px;   
+    }
+
+    .bg-two {
+        margin-top: -100px;    
     }
 
     #about h2 {
@@ -151,9 +155,7 @@
         padding-bottom: 15px;
     }
 
-    .bg-two {
-        margin-top: -100px;    
-    }
+   
 
     #about {
         margin: 0 auto -100px;
