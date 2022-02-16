@@ -34,7 +34,7 @@
     }    
 
     #intro img {
-        width: 300px;
+        width: 250px;
     }
 
     #projects h2 {
@@ -172,10 +172,53 @@
     }
   }
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 376px) {
+    html {
+        font-size: 16px;
+    }
 
+    h1 span {
+        font-size: 45%;
+    }
   }
 
   @media only screen and (max-width: 320px) {
-      
+    .container {
+        padding: 0 10px;             
+    }
+
+    #intro {
+        height: 450px;
+    }
+
+    h1 {
+        font-size: 210%;
+    }
+
+    #intro h2 {    
+        font-size: 120%;
+    } 
+    
+    #intro img {
+        width: 180px;
+        margin-top: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #menu li  {
+        display: block;
+        margin-left: 0;
+    }
+
+    #menu a {
+        font-size: 110%;
+    }
+
+    footer li {
+        display: inline-block;
+        padding: 20px 25px 40px;
+    }
   }
