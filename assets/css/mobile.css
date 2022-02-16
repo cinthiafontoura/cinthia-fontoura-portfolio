@@ -14,9 +14,9 @@
     #intro img {
         width: 350px;
     }
-  }
+}
 
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .container {
         padding: 0 20px; 
     }
@@ -44,11 +44,11 @@
     #project-one,
     #project-three {
         margin-bottom: 100px; 
-}
+    }
 
     #project-two {
         margin-bottom: 100px;   
-}
+    }
 
     #about h2 {
         margin-bottom: 30px;
@@ -67,9 +67,9 @@
     #contact {
         margin: 100px auto 0;    
     }
-  }
+}
 
-  @media only screen and (max-width: 582px) {
+@media only screen and (max-width: 582px) {
 
     .container {
         padding: 0 15px; 
@@ -79,19 +79,22 @@
         padding: 10px 15px;
     }    
 
-    header {
+    #navbar {
         flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
     }
 
     #logo {
         display: none;
     }
 
+    #menu {
+        justify-self: center;
+    }
+
     #menu li  {
         display: inline-block;
-        margin: 25px 0 20px 10px;
+        margin: 25px 5px 20px 5px;
     }
     
     #menu a {
@@ -99,10 +102,11 @@
     }
 
     #intro {
-        height: 450px;
+        height: 550px;
         justify-content: center;
         flex-direction: column-reverse;
         text-align: center;
+        padding-top: 50px;
     }
 
     h1 {
@@ -123,8 +127,7 @@
     #project-three {
         flex-direction: column-reverse;
         justify-content: center;
-        margin-bottom: 100px; 
-        
+        margin-bottom: 100px;         
     }
 
     #project-one .project-info,
@@ -145,11 +148,15 @@
     .project-screens {
         width: 90%;
         height: 90%;
-        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+    .bg-two {
+        margin-top: -100px;    
     }
 
     #about {
-        margin-bottom: 0;
+        margin: 0 auto -100px;
     }
 
     #img-about {
@@ -178,9 +185,9 @@
     footer li a {
         font-size: var(--icon-medium);
     }
-  }
+}
 
-  @media only screen and (max-width: 395px) {
+@media only screen and (max-width: 395px) {
     html {
         font-size: 16px;
     }
@@ -188,15 +195,22 @@
     h1 span {
         font-size: 45%;
     }
-  }
+}
 
-  @media only screen and (max-width: 360px) {
+@media only screen and (max-width: 360px) {
     .container {
         padding: 0 10px;             
     }
 
+    header {
+        position: static;
+        left: 0;
+        transform: translate(0, 0);  
+        width: 100%;      
+    }
+
     #intro {
-        height: 450px;
+        height: 400px;
     }
 
     h1 {
@@ -229,4 +243,4 @@
         display: inline-block;
         padding: 20px 25px 40px;
     }
-  }
+}
