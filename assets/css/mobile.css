@@ -65,7 +65,7 @@
     }
 
     #contact {
-        margin: 100px auto 50px;    
+        margin: 100px auto 0;    
     }
   }
 
@@ -148,14 +148,22 @@
         margin-bottom: 15px;
     }
 
+    #about {
+        margin-bottom: 0;
+    }
+
     #img-about {
         width: 50%;   
         height: 50%;
         margin-bottom: 15px;
     }
 
+    #contact .bg-one {
+        margin-top: -80px;
+    }
+
     #contact h2 {    
-        margin-top: 60px;
+        margin-top: -60px;
     }
     
     #contact p {    

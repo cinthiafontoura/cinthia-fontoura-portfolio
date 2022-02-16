@@ -98,7 +98,6 @@ header {
 }
 
 #menu a:hover {
-    font-weight: 500;
     color: var(--color-primary-medium);    
 }
 
@@ -249,13 +248,20 @@ h1 span {
 }
 
 /* Contact Section */
+#contact .bg-one {
+    margin-top: -10px;
+}
+
 #contact {
     clear: both;
-    margin: 120px auto 50px;    
+    background-color: var(--color-primary-darker);
+    color: var(--color-primary-lighter);
+    padding-bottom: 50px;
 }
 
 #contact h2 {    
-    margin: 70px 0 10px;
+    margin: -70px 0 10px;
+    
 }
 
 #contact p {    
@@ -277,22 +283,26 @@ label {
     padding: 12px;
     width: 100%;
     border-radius: 4px;
-    border: 2px solid var(--color-primary-darker);
+    border: 2px solid var(--color-primary-lighter);
     font-family: 'Roboto Mono', monospace;
     font-size: 80%;
-    background-color: var(--color-primary-lighter);
-    color: var(--color-primary-darker);
+    background-color: var(--color-primary-darker);
+    color: var(--color-primary-lighter);
     outline: none;    
 }
 
 .text-form:hover,
 .text-form:focus-visible {
-    border-color: var(--color-primary);
+    border: 3px solid var(--color-primary);
 }
 
 .text-form::placeholder {
-    color: var(--color-primary-medium);    
+    color: var(--color-primary);    
     font-family: 'Roboto Mono', monospace;
+}
+
+hr {
+    border: .5px solid var(--color-primary-medium);
 }
 
 
@@ -300,7 +310,7 @@ label {
 footer {
     background-color: var(--color-primary-darker);
     padding: 30px;
-    margin: 50px auto 0;
+    margin: 0 auto;
     text-align: center;
 }
 
