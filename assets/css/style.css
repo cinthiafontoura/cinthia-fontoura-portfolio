@@ -161,6 +161,7 @@ h1 span {
 
 #project-two {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
     margin-bottom: 150px;   
@@ -226,7 +227,6 @@ h1 span {
 }
 
 #img-about {
-    flex: 0 0 10%; 
     width: 30%;   
     height: 30%;
     border-radius: 8px;
@@ -251,9 +251,9 @@ h1 span {
 /* Contact Section */
 #contact {
     clear: both;
-    margin: 120px auto 50px;
-    
+    margin: 120px auto 50px;    
 }
+
 #contact h2 {    
     margin: 70px 0 10px;
 }
@@ -279,7 +279,7 @@ label {
     border-radius: 4px;
     border: 2px solid var(--color-primary-darker);
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.2rem;
+    font-size: 80%;
     background-color: var(--color-primary-lighter);
     color: var(--color-primary-darker);
     outline: none;    

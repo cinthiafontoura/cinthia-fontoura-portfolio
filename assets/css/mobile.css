@@ -1,0 +1,181 @@
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 0 15px; 
+    }
+
+    .btn {
+        font-size: 100%;
+    }
+
+    #intro img {
+        width: 350px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px; 
+    }
+
+    #intro {
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+
+    #intro h2 {    
+        font-size: 150%;
+    }    
+
+    #intro img {
+        width: 300px;
+    }
+
+    #projects h2 {
+        margin-bottom: 40px;
+    }
+
+    #project-one,
+    #project-three {
+        margin-bottom: 100px; 
+}
+
+    #project-two {
+        margin-bottom: 100px;   
+}
+
+    #about h2 {
+        margin-bottom: 30px;
+    }
+
+    #about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-text {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    #contact {
+        margin: 100px auto 50px;    
+    }
+  }
+
+  @media only screen and (max-width: 426px) {
+
+    .container {
+        padding: 0 15px; 
+    }
+
+    .btn {
+        padding: 10px 15px;
+    }    
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #menu li  {
+        display: inline-block;
+        margin: 25px 0 20px 10px;
+    }
+    
+    #menu a {
+        font-size: 100%;
+    }
+
+    #intro {
+        height: 450px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 250%;
+    }
+
+    #intro h2 {    
+        font-size: 140%;
+    }    
+
+    #intro img {        
+        width: 200px;
+        margin-top: 40px;
+    }
+
+    #project-one,
+    #project-two,
+    #project-three {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-bottom: 100px; 
+        
+    }
+
+    #project-one .project-info,
+    #project-two .project-info,
+    #project-three .project-info {
+        width: 100%;
+        margin: 0;
+    }
+
+    #projects h3 {
+        text-align: center;
+    }
+
+    .project-description {
+        text-align: justify;
+    }
+
+    .project-screens {
+        width: 90%;
+        height: 90%;
+        margin-bottom: 15px;
+    }
+
+    #img-about {
+        width: 50%;   
+        height: 50%;
+        margin-bottom: 15px;
+    }
+
+    #contact h2 {    
+        margin-top: 60px;
+    }
+    
+    #contact p {    
+        margin-bottom: 40px;
+        font-size: 100%;
+    }
+
+    .text-form {
+        font-size: 90%;
+    }
+
+    footer li a {
+        font-size: var(--icon-medium);
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+
+  }
+
+  @media only screen and (max-width: 320px) {
+      
+  }
