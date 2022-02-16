@@ -21,13 +21,14 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: var(--color-primary-darker);
     background: var(--color-primary-lighter);
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -39,7 +40,7 @@ body {
 
 h2 {    
     font-size: 200%;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 /* Buttons */
@@ -146,7 +147,7 @@ h1 span {
 }
 
 #projects h2 {
-    margin: -70px 0 70px;
+    margin: -70px 0 60px;
     color: var(--color-primary-lighter);
 }
 
@@ -202,6 +203,7 @@ h1 span {
 
 .project-screens {
     width: 50%;
+    height: 50%;
 }
 
 .bg-two {
@@ -211,35 +213,54 @@ h1 span {
 }
 
 /* About Section */
+#about {
+    margin: 0 auto 50px;
+}
+
 #about h2 {
     margin: -70px 0 70px;
 }
 
-#about .content {
+#about-content {
     display: flex;
 }
+
 #img-about {
-    width: 300px;
-    border-radius: 4px;
+    flex: 0 0 10%; 
+    width: 30%;   
+    height: 30%;
+    border-radius: 8px;
 }
 
-.about-text {
-    margin-left: 50px;
+#about-text {
+    display: block;
+    width: 65%;
+    margin-left: 30px;
 }
 
-.about-text p {
+#about-text p {
     margin-bottom: 20px;    
     line-height: 1.5;
 }
 
-.about-text i {
+#about-text i {
     font-size: var(--icon-medium); 
     margin: 0 10px 40px 0;   
 }
 
 /* Contact Section */
-#contact h2 {
-    margin: 150px 0 50px;
+#contact {
+    clear: both;
+    margin: 120px auto 50px;
+    
+}
+#contact h2 {    
+    margin: 70px 0 10px;
+}
+
+#contact p {    
+    margin-bottom: 50px;
+    font-size: 110%;
 }
 
 form {
