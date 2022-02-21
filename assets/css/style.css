@@ -184,8 +184,7 @@ h1 span {
 #project-two {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
     margin-bottom: 150px;   
 }
 
@@ -209,6 +208,7 @@ h1 span {
 
 .project-description {
     color: var(--color-light);
+    text-align: left;
     width: 100%;
 }
 
