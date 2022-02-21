@@ -62,6 +62,14 @@ h2 {
     color: var(--color-primary-darker);
 }
 
+#back-to-top {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 200;
+}
+
 /* Header */
 header {
     background-color: rgba(239, 214, 255, .9);
