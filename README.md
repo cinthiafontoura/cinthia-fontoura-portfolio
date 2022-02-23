@@ -15,7 +15,7 @@ Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a f
 ![navigation](https://user-images.githubusercontent.com/80278757/155013514-8c47cd24-84c4-4a9c-bd1b-780159b5e795.png)
 
 
-* **Introduction Section**
+* **The Header**
   - A quick introduction tells who I'm and what I do with a button that goes to the contact section to facilitate communication and a gif representing me. 
   
 ![intro](https://user-images.githubusercontent.com/80278757/155025035-8d9c2bae-3cd4-4310-ad73-65a2893d9e87.png)
@@ -50,12 +50,42 @@ Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a f
 
 ## Testing
 
-* **Desktop**
+* I've tested that this page works in Chrome and Firefox.
+* I've confirmed that this project is responsive on all screen sizes using dev tools.
+* I confirmed by testing with users that the text of all sections is readable and easy to understand.
+* I've confirmed that the form works, requires entries in every field and the submit button works.
 
-![lighthouse-desktop](https://user-images.githubusercontent.com/80278757/155015265-51589f6d-93d3-45ce-8cd5-4ac9b374347f.png)
+### Bugs
+
+#### Solved Bugs
+
+#### Unfixed Bugs
+
+### Validator Testing
+
+* **HTML:** No errors were found when passing throught official W3C Validator.
+* **CSS:** No errors were returned when passing throught the Jigsaw.
 
 
-* **Mobile**
+  - **Desktop**
 
-![lighthouse-mobile](https://user-images.githubusercontent.com/80278757/155015468-5e916e05-1fa0-4dfe-8cc3-8fcf57cca4f8.png)
+     ![lighthouse-desktop](https://user-images.githubusercontent.com/80278757/155015265-51589f6d-93d3-45ce-8cd5-4ac9b374347f.png)
 
+
+  - **Mobile**
+
+     ![lighthouse-mobile](https://user-images.githubusercontent.com/80278757/155015468-5e916e05-1fa0-4dfe-8cc3-8fcf57cca4f8.png)
+     
+     
+     
+     ## Deployment
+     
+     ## Credits
+     
+     ### Content
+     
+     * https://stackoverflow.com/questions/2861247/center-aligning-a-fixed-position-div
+     
+     ### Media
+     
+     * The images in the navigation and header was taken from https://picrew.me/image_maker/338224
