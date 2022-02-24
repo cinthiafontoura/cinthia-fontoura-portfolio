@@ -100,12 +100,13 @@
     }
 
     #menu li  {
-        display: inline-block;
-        margin: 25px 5px 20px 5px;
+        display: inline-block;         
+        margin: 20px 5px;       
     }
     
     #menu a {
         font-size: 100%;
+        margin-left: 0;
     }
 
     #intro {
@@ -206,6 +207,15 @@
         left: 0;
         transform: translate(0, 0);  
         width: 100%;      
+    }    
+
+    #menu li  {                
+        margin: 20px 3px 10px;       
+    }
+
+    #menu a {
+        font-size: 110%;        
+        margin-left: 0;
     }
 
     #intro {
@@ -227,15 +237,6 @@
 
     header {
         text-align: center;
-    }
-
-    #menu li  {
-        display: block;
-    }
-
-    #menu a {
-        font-size: 110%;        
-        margin-left: 0;
     }
 
     footer li {
