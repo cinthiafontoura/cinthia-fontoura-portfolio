@@ -25,7 +25,8 @@
         height: 430px;
     }
 
-    h1 {
+    h1,
+    #thanks h2{
         font-size: 300%;
     }
 
@@ -71,6 +72,18 @@
     #contact {
         margin: 100px auto 0;    
     }
+
+    #thanks p {
+        font-size: 120%;
+    }
+    
+    #thanks a {
+        font-size: 110%;
+    }
+
+    #thanks img {
+        width: 220px;
+    }
 }
 
 @media only screen and (max-width: 582px) {
@@ -87,7 +100,6 @@
     }
 
     #navbar {
-        flex-direction: column;
         justify-content: center;
     }
 
@@ -117,7 +129,8 @@
         padding-top: 50px;
     }
 
-    h1 {
+    h1,
+    #thanks h2 {
         font-size: 250%;
     }
 
@@ -185,6 +198,18 @@
     footer li a {
         font-size: var(--icon-medium);
     }
+
+    #thanks p {
+        font-size: 110%;
+    }
+    
+    #thanks a {
+        font-size: 100%;
+    }
+
+    #thanks img {
+        width: 200px;
+    }
 }
 
 @media only screen and (max-width: 395px) {
@@ -222,7 +247,8 @@
         height: 400px;
     }
 
-    h1 {
+    h1,
+    #thanks h2 {
         font-size: 210%;
     }
 
@@ -242,4 +268,9 @@
     footer li {
         padding: 20px 25px 40px;
     }
+
+    #thanks img {
+        width: 180px;
+    }
+
 }

@@ -33,8 +33,7 @@
                         </li>
                     </ul>
                 </nav>
-            </div> 
-                  
+            </div>                   
         </header> 
         <a id="back-to-top" class="btn" href="#top"  aria-label="Back to top of the page">
             <i class="fa-solid fa-arrow-up"></i>
@@ -47,11 +46,9 @@
                     Cinthia Fontoura.
                 </h1>
                 <h2>A UX/UI and Web Developer.</h2>
-                <a class="btn" href="#contact">Hire Me!</a>
+                <a class="btn" href="#contact" aria-label="Go to Contact section">Hire Me!</a>
             </div>
-            <div>
-                <img src="assets/images/perfil-animation_hero.gif" alt="Cinthia perfil animation">
-            </div>           
+            <img src="assets/images/perfil-animation_hero.gif" alt="Cinthia perfil animation">           
         </section>
         <section id="projects">
             <div class="bg-one"></div>
@@ -176,7 +173,7 @@
             <div class="container">
                 <h2>Contact Me</h2>
                 <p>I am available to work on your projects or team and bring your ideas to life. I am just a click away.</p>
-                <form name="contact" data-netlify="true" method="POST">
+                <form action="/thank-you.html" name="contact" data-netlify="true" method="GET">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" class="text-form" placeholder="Your Name" required>
                     <label for="email">Email</label>
