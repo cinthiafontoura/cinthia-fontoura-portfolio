@@ -2,13 +2,13 @@
 
 Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a front-end software developer to joy their team and bring a project to life. Users of this site will be able to see some of my projects live and check the code, know more about me, which technologies I'm using or studying, contact me and follow me on social media and hopefully hire me!
 
-![responsive](https://user-images.githubusercontent.com/80278757/155013491-f85f263b-3d5e-43e0-8d22-54fbc4639120.png)
+![responsive](https://user-images.githubusercontent.com/80278757/155611266-9f1e8db0-15f2-446c-ad98-30e04ae3001b.png)
 
 
 ## Features
 
 * **Navigation**
-  - Stuck at the top of the page, the navigation bar includes links to the Projects, About and Contact sections to allow easy navigation through the page. 
+  - Fixed at the top of the page, the navigation bar includes links to the Projects, About and Contact sections to allow easy navigation through the page. 
   - The logo on big screens and the arrow button on the bottom right on small screens, make it easy back to the top of the page without scrolling up using just one hand.
   - A Resume button that opens the link to my CV archive on a new tab showing to the user my professional path and education. 
   
@@ -23,69 +23,109 @@ Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a f
 
 * **Projects Section**
   - A brief description of each website project, the technologies used, buttons linking to the live project and code on GitHub, and an image showing what the responsive website looks like.
+  - The icons are just illustrative, all technologies are in the description.
   
 ![projects](https://user-images.githubusercontent.com/80278757/155027185-aadcdb81-7d07-462a-b9d5-e0f6b580857e.png)
 
 
 * **About Section**
   - A photo of my head, a description of me and what I know and a button to download my CV.
-  - In this section, the user will know where I came from, what I did to live until now and how I decide to move to the tech sector, some technologies that I have studied and download my CV for future consultation.
+  - In this section, the user will know where I came from, what I did to live until now and how I decide to move to the tech sector, some technologies that I have studied and they can download my CV for future consultation.
+  - All icons have a title attribute to make accessible to screen readers. 
 
 ![about](https://user-images.githubusercontent.com/80278757/155027291-86677484-2db4-4d77-b331-e7f397e63e75.png)
 
 
 * **Contact Section**
   - A simple form that collects  Name, Email and Message for users that wants to get in touch with me.
+  - The form is working using Netlify forms. The steps to use are as follow:
+    - Add **name** and **data-netlify="true"** attributes to the element **form**. 
+    - You can read the documentation here [Forms setup](https://docs.netlify.com/forms/setup/)
   
 ![contact](https://user-images.githubusercontent.com/80278757/155027300-62d70c6d-1949-474f-af2c-808cfcbe34dd.png)
 
 
 * **The Footer**
-  - The footer section includes links to social media and email to encorage users to keep connected.
+  - The footer section includes links to social media and email to encourage users to keep connected.
   - All links open in a new tab.
   
 ![footer](https://user-images.githubusercontent.com/80278757/155013571-a4a81c91-8f39-4689-8d46-5a8e2b891d63.png)
 
 
+* **Form feedback page**
+  - A response page saying thank you to those that sent a message in the form with a link back to the portfolio website.
+  - This page it's essential to give the user feedback about what happens when they click on the "Send" button.
+
+![thank-you](https://user-images.githubusercontent.com/80278757/155611575-ac14306c-7c4e-4d9a-aa5f-a02f6879c24e.png)
+
+
 
 ## Testing
 
-* I've tested that this page works in Chrome and Firefox.
+* I've tested that this page works in Chrome and Firefox (mobile and desktop versions).
 * I've confirmed that this project is responsive on all screen sizes using dev tools.
 * I confirmed by testing with users that the text of all sections is readable and easy to understand.
 * I've confirmed that the form works, requires entries in every field and the submit button works.
 
-### Bugs
-
-#### Solved Bugs
-
-#### Unfixed Bugs
-
 ### Validator Testing
 
-* **HTML:** No errors were found when passing throught official W3C Validator.
-* **CSS:** No errors were returned when passing throught the Jigsaw.
+  * **HTML** 
+    - No errors were found when passing throught official W3C Validator.
 
+  * **CSS**
+    - No errors were returned when passing through the Jigsaw.
+  
+  * **Accessibility**
+    - I confirmed that the colours and fonts chosen are easy to read, and all links, icons and images have descriptive text for screen readers running it through Lighthouse in Chrome DevTools.
 
-  - **Desktop**
+    - **Desktop**
 
-     ![lighthouse-desktop](https://user-images.githubusercontent.com/80278757/155015265-51589f6d-93d3-45ce-8cd5-4ac9b374347f.png)
+       ![lighthouse-desktop](https://user-images.githubusercontent.com/80278757/155611377-5fc53857-4da7-474d-887e-9ff30803ec9e.png)
 
+    - **Mobile**
 
-  - **Mobile**
+       ![lighthouse-mobile](https://user-images.githubusercontent.com/80278757/155611357-38f4ae37-b919-4fff-825d-3aa920aaa42f.png)
 
-     ![lighthouse-mobile](https://user-images.githubusercontent.com/80278757/155015468-5e916e05-1fa0-4dfe-8cc3-8fcf57cca4f8.png)
      
      
+### Bugs and Errors
+
+  * **Solved**
+    - Because this site was built just using HTML and CSS and I used the action="mailto:email" attribute the form show a security error. I solved this issue by deploying in Netlify and using their built-in form handling.
+    - When I first passed through the W3C Validator all anchors elements were inside the buttons tags resulting in errors. So I removed and the errors are gone. 
+    - All colours were changed to be more accessible for those who have a visual deficiency.
+    - The images in the Portfolio section was background images using two divs and positioning, resulting in a broken style on medium and smaller screens and impossible to detect by screen readers. I've solved using Adobe Photoshop to create the image and add them to the HTML using img element and alt attribute.
+    - After implementing an arrow up button to help users goes to the top of the page I realize that the buttons don't work because I've added the id attribute in the fixed navigation. I changed the location of the id to the body element to fix the issue.
+
+  * **Unfixed**    
+    - No unfixed bugs.
+ 
+ ### Improvements to implement
+ 
+ * Using a gif in the hero animation is causing damage to the performance for desktop and mobile versions, the better way to prevent this is using a video instead.
+ * For the mobile performance increase is necessary to reduce the size of the images.
+ 
      
-     ## Deployment
-     
-     ## Credits
-     
-     ### Content
-     
-     * https://stackoverflow.com/questions/2861247/center-aligning-a-fixed-position-div
-     
-     ### Media
-     
-     * The images in the navigation and header was taken from https://picrew.me/image_maker/338224
+## Deployment
+
+The site was deployed to Netlify pages. The steps to deploy are as follows:
+   - In the Netlify overview click on **Add new site**
+   - Choose **Import an existing project** on the dropdown menu
+   - Click on the GitHub button to connect to the Git provider
+   - Chose the repository of the project that you want to deploy
+   - Click on **Deploy site** and after a few seconds, you will have access to the URL of the deployed site.
+   - Go to **Domain settings** > **Options** > **Edit site name** to change the site name and personalize the URL.
+ 
+ The live website can be found here [Cinthia Fontoura Portfolio](https://cinthia-fontoura-portfolio.netlify.app/).
+  
+ 
+## Credits
+
+* Support of documentation in [W3schools](https://www.w3schools.com/).
+* Wireframe made using Figma [check here](https://www.figma.com/proto/3AfX32lUP6UvdqDZnaKQ6o/Cinthia-Fontoura-Portfolio?page-id=0%3A1&node-id=0%3A1&starting-point-node-id=1%3A2&scaling=min-zoom)
+* Icons from [Font Awesome](https://fontawesome.com/)
+* Code for the fixed navigation found on [stackoverflow](https://stackoverflow.com/questions/2861247/center-aligning-a-fixed-position-div).
+* Colour palette create on [Addobe Color](https://color.adobe.com/create/color-wheel).
+* Images created and resized using Adobe Photoshop.
+* The images in the navigation, header and thank-you page was created using [picrew website](https://picrew.me/image_maker/338224).
+
