@@ -31,7 +31,7 @@ Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a f
 * **About Section**
   - A photo of my head, a description of me and what I know and a button to download my CV.
   - In this section, the user will know where I came from, what I did to live until now and how I decide to move to the tech sector, some technologies that I have studied and they can download my CV for future consultation.
-  - All icons have a title attribute to make accessible to screen readers. 
+  - All icons have a title attribute to make accessible to screen readers as described in the [Font Awesome documentation](https://fontawesome.com/docs/web/dig-deeper/accessibility#auto-accessibility-with-kits).
 
 ![about](https://user-images.githubusercontent.com/80278757/155027291-86677484-2db4-4d77-b331-e7f397e63e75.png)
 
