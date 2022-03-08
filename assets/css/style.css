@@ -42,6 +42,7 @@ html {
 h2 {    
     font-size: 200%;
     padding-bottom: 30px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 li  {
@@ -67,7 +68,7 @@ li  {
     color: var(--color-primary-darker);
 }
 
-#back-to-top {
+.btn__pagegup {
     display: none;
     position: fixed;
     right: 10px;
@@ -76,7 +77,7 @@ li  {
 }
 
 /* Header */
-header {
+.navbar {
     background-color: rgba(239, 214, 255, .9);
     position: fixed;
     left: 50%;
@@ -84,30 +85,30 @@ header {
     width: 100%;      
 }
 
-#navbar {
+.navbar__links {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#logo {
+.navbar__logo {
     width: 60px;
     border-radius: 50%;
-    margin: 20px 0;
+    margin: 10px 0;
     opacity: 1;
     transition: .5s ease;
 }
 
-#logo:hover {
+.navbar__logo:hover {
     opacity: .7;
 }
 
-#menu {
+.navbar__items {
     justify-self: flex-end;
 }
 
-#menu a {
+.navbar__item {
     text-decoration: none;
     color: var(--color-primary-darker);
     font-weight: 400;
@@ -115,19 +116,19 @@ header {
     margin-left: 20px;
 }
 
-#menu a:hover {
+.navbar__item:hover {
     color: var(--color-primary-medium);    
 }
 
-#menu .btn {
+.navbar__items .btn {
     color: var(--color-dark);
 }
 
-#menu .btn:hover {
+.navbar__items .btn:hover {
     color: var(--color-primary-darker);
 }
 
-#intro {
+.intro {
     height: 600px;
     display: flex;
     align-items: center;
@@ -135,40 +136,45 @@ header {
     padding-top: 100px;
 }
 
-h1 {
+.intro__title {
     font-size: 350%;
     padding-bottom: 10px;
 }
 
-h1 span {
+.intro__title--small {
     font-size: 35%;
+    font-family: 'Roboto Mono', monospace;
 }
 
-#intro img {
+.intro__subtitle {
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro__img {
     width: 400px;
     border-radius: 50%;
     border: 4px solid var(--color-primary-medium);
 }
 
 /* Projects Section */
-.bg-one {
+.projects__bg {
+    width: 100vw;
     height: 150px;   
     background-image: linear-gradient(5deg, var(--color-primary-darker) 49.69%, var(--color-primary-lighter) 50%); 
     margin-top: -30px;
 }
 
-#projects {    
+.projects {    
     background-color: var(--color-primary-darker);
     color: var(--color-primary-lighter);
 }
 
-#projects h2 {
+.projects__title {
     margin: -70px 0 60px;
     color: var(--color-primary-lighter);
 }
 
-#project-one,
-#project-three {
+.project__item--left {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -176,134 +182,134 @@ h1 span {
     margin-bottom: 150px; 
 }
 
-#project-three {
+.project__item--left:last-child {
     margin-bottom: 0;
+    padding-bottom: 30px;
 }
 
-#project-two {
+.project__item--right {
     display: flex;
     align-items: center;
     justify-content: space-between;    
     margin-bottom: 150px;   
 }
 
-#project-one .project-info,
-#project-three .project-info {
+.project__info--left {
     width: 50%;
     margin-left: 20px;
 }
 
-#project-two .project-info {
+.project__info--right {
     width: 50%;
     margin-right: 20px;
 }
 
-#projects h3 {
+.project__name {
     margin-bottom: 20px;
     font-size: 160%; 
     font-family: 'Roboto Mono', monospace;
     color: var(--color-light);
 }
 
-.project-description {
+.project__description {
     color: var(--color-light);
     text-align: left;
     width: 100%;
 }
 
-.project-technologies {
-    font-size: var(--icon-small);   
-}
-
-.project-technologies i {
+.project__icon {
     margin: 20px 10px 30px 0;
+    font-size: var(--icon-small);
 }
 
-#projects .btn {
+.project__btn {
     margin-right: 10px;
 }
 
-.project-screens {
+.project__img {
     width: 50%;
     height: 50%;
 }
 
 /* About Section */
-.bg-two {
+.about__bg {
     height: 150px;   
     background-image: linear-gradient(5deg, var(--color-primary-lighter) 48.69%, var(--color-primary-darker) 49%);
     margin-top: 0;    
 }
 
-#about {
+.about {
     margin: 0 auto 50px;
 }
 
-#about h2 {
-    margin: -70px 0 70px;
+.about__title {
+    margin: -70px 0 50px;
 }
 
-#about-content {
+.about__content {
     display: flex;
 }
 
-#img-about {
+.about__img {
     width: 30%;   
     height: 30%;
     border-radius: 8px;
 }
 
-#about-text {
+.about__info {
     display: block;
     width: 65%;
     margin-left: 30px;
 }
 
-#about-text p {
+.about__description {
     margin-bottom: 20px;    
     line-height: 1.5;
 }
 
-#about-text i {
+.about__icon {
     font-size: var(--icon-medium); 
     margin: 0 20px 40px 0;   
 }
 
 /* Contact Section */
-#contact .bg-one {
+.contact__bg {
+    width: 100vw;
+    height: 150px;   
+    background-image: linear-gradient(5deg, var(--color-primary-darker) 49.69%, var(--color-primary-lighter) 50%); 
     margin-top: -10px;
 }
 
-#contact {
+.contact {
     clear: both;
     background-color: var(--color-primary-darker);
     color: var(--color-primary-lighter);
     padding-bottom: 50px;
 }
 
-#contact h2 {    
+.contact__title {    
     margin: -70px 0 10px;
     
 }
 
-#contact p {    
+.contact__description {    
     margin-bottom: 50px;
     font-size: 110%;
 }
 
-form {
+.contact__form {
     margin: 0 auto;
 }
 
-label {
+.contact__form-lb {
     font-weight: 500;
 }
 
-label:hover {
+.contact__form-lb:hover {
     color: var(--color-primary);
 }
 
-.text-form {
+.contact__form-txt {
     display: block;
     margin: 10px auto 20px;
     padding: 12px;
@@ -317,12 +323,12 @@ label:hover {
     outline: none;    
 }
 
-.text-form:hover,
-.text-form:focus-visible {
+.contact__form-txt:hover,
+.contact__form-txt:focus-visible {
     border: 2px solid var(--color-primary);
 }
 
-.text-form::placeholder {
+.contact__form-txt::placeholder {
     color: var(--color-primary-lighter);    
     font-family: 'Roboto Mono', monospace;
 }
@@ -333,54 +339,54 @@ hr {
 
 
 /* Footer */
-footer {
+.social-media {
     background-color: var(--color-primary-darker);
     padding: 30px;
     margin: 0 auto;
     text-align: center;
 }
 
-footer li {
+.social-media__item {
     padding: 20px 30px 40px;
 }
 
-footer a {
+.social-media__link {
     font-size: var(--icon-big);
     color: var(--color-primary-lighter);    
 }
 
-footer a:hover {
+.social-media__link:hover {
     color: var(--color-primary);
 }
 
-footer p {
+.copyright {
     font-size: 80%;
     color: var(--color-primary-lighter);
 }
 
 /* Thank You Page */
-#thanks {
+.thanks {
     text-align: center;
     margin: auto;
 }
 
-#thanks h2 {
+.thanks__title {
     font-size: 350%;
     margin-bottom: 10px;
 }
 
-#thanks p {
+.thanks__msg {
     font-size: 130%;
     margin-bottom: 50px;
 }
 
-#thanks a {
+.thanks__link {
     font-size: 120%;
     color: var(--color-primary-darker);
     font-weight: 500;
 }
 
-#thanks img {
+.thanks__img {
     margin: 100px auto 30px;
     width: 250px;
     border-radius: 50%;

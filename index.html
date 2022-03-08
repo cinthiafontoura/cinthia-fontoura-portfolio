@@ -11,155 +11,149 @@
         <link rel="stylesheet" href="assets/css/media-queries.css">
         <title>Cinthia Fontoura - Portfolio</title>
     </head>
-    <body id="top">
-        <header>
-            <div id="navbar" class="container">
-                <a href="#top" aria-label="Back to top of the page">
-                    <img id="logo" src="assets/images/logo.png" alt="Cinthia Fontoura logo">
+    <body id="pagegup">
+        <header class="navbar">
+            <div class="navbar__links container">
+                <a href="#pagegup" aria-label="Back to top of the page">
+                    <img class="navbar__logo" src="assets/images/logo.png" alt="Cinthia Fontoura logo">
                 </a>
-                <nav id="menu">
-                    <ul>
+                <nav>
+                    <ul class="navbar__items">
                         <li>
-                            <a href="#projects" aria-label="Go to Projects section">Projects</a>
+                            <a class="navbar__item" href="#projects" aria-label="Go to Projects section">Projects</a>
                         </li>
                         <li>
-                            <a href="#about" aria-label="Go to About section">About</a>
+                            <a class="navbar__item" href="#about" aria-label="Go to About section">About</a>
                         </li>
                         <li>
-                            <a href="#contact" aria-label="Go to Contact section">Contact</a>
+                            <a class="navbar__item" href="#contact" aria-label="Go to Contact section">Contact</a>
                         </li>
                         <li>
-                            <a class="btn" href="cinthia_fontoura-cv.pdf" aria-label="Have a look at my CV (open in a new tab)" target="_blank">Resume</a>                    
+                            <a class="navbar__item btn" href="cinthia_fontoura-cv.pdf" aria-label="Have a look at my CV (open in a new tab)" target="_blank">Resume</a>                    
                         </li>
                     </ul>
                 </nav>
             </div>                   
         </header> 
-        <a id="back-to-top" class="btn" href="#top"  aria-label="Back to top of the page">
+        <a class="btn btn__pagegup" href="#pagegup"  aria-label="Back to top of the page">
             <i class="fa-solid fa-arrow-up"></i>
         </a>        
-        <section id="intro" class="container">            
+        <section class="intro container">            
             <div>
-                <h1>
-                    <span>Hey! My name is</span>
-                    <br>
+                <h1 class="intro__title">
+                    <span class="intro__title--small">Hey! My name is</span>
+                    <br>                    
                     Cinthia Fontoura.
                 </h1>
-                <h2>A UX/UI and Web Developer.</h2>
+                <h2 class="intro__subtitle">A UX/UI and Web Developer.</h2>
                 <a class="btn" href="#contact" aria-label="Go to Contact section">Hire Me!</a>
             </div>
-            <img src="assets/images/perfil-animation_hero.gif" alt="Cinthia perfil animation">           
+            <img class="intro__img" src="assets/images/perfil-animation_hero.gif" alt="Cinthia perfil animation">           
         </section>
-        <section id="projects">
-            <div class="bg-one"></div>
+        <section id="projects" class="projects">
+            <div class="projects__bg"></div>
             <div class="container">
-                <h2>Projects</h2>
-                <div id="project-one">
-                    <div class="project-info">
-                        <h3>Restaurant 104</h3>
-                        <p class="project-description">For those who live are visiting Dublin, that's a very good restaurant to go to! On the website, you can see the menus and book a table or get in touch. Website builds with HTML, CSS and Sass to practice what I've learned at Udemy and Alura courses. </p>
-                        <div class="project-technologies">
-                            <ul>
-                                <li>
-                                    <i class="fa-brands fa-html5"></i>
-                                </li>
-                                <li>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                </li>
-                                <li>
-                                    <i class="fa-brands fa-sass"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="project-buttons">
-                            <a class="btn" href="https://restaurant104.ie/" aria-label="Have a look at the live website (open in a new tab)" target="_blank">Live Site</a>
-                            <a class="btn" href="https://github.com/cinthiafontoura/restaurant104" aria-label="Have a look at the code on GitHub (open in a new tab)" target="_blank">GitHub</a>
+                <h2 class="projects__title">Projects</h2>
+                <div class="project__item--left">
+                    <div class="project__info--left">
+                        <h3 class="project__name">Restaurant 104</h3>
+                        <p class="project__description">For those who live are visiting Dublin, that's a very good restaurant to go to! On the website, you can see the menus and book a table or get in touch. Website builds with HTML, CSS and Sass to practice what I've learned at Udemy and Alura courses. </p>
+                        <ul class="project__technologies">
+                            <li>
+                                <i class="project__icon fa-brands fa-html5"></i>
+                            </li>
+                            <li>
+                                <i class="project__icon fa-brands fa-css3-alt"></i>
+                            </li>
+                            <li>
+                                <i class="project__icon fa-brands fa-sass"></i>
+                            </li>
+                        </ul>
+                        <div>
+                            <a class="btn project__btn" href="https://restaurant104.ie/" aria-label="Have a look at the live website (open in a new tab)" target="_blank">Live Site</a>
+                            <a class="btn project__btn" href="https://github.com/cinthiafontoura/restaurant104" aria-label="Have a look at the code on GitHub (open in a new tab)" target="_blank">GitHub</a>
                         </div>                        
                     </div>
-                    <img class="project-screens" src="assets/images/restaurant104.png" alt="Desktop and mobile version of Restaurant 104 website">                                         
+                    <img class="project__img" src="assets/images/restaurant104.png" alt="Desktop and mobile version of Restaurant 104 website">                                         
                 </div>
-                <div id="project-two">
-                    <div class="project-info">
-                        <h3>Portfolio</h3>
-                        <p class="project-description">This website is where I show a bit about me, the projects I've worked on and my contacts for people that want to hire me. Site build with HTML and CSS to the first project portfolio with Code Institute.</p>
-                        <div class="project-technologies">
-                            <ul>
-                                <li>
-                                    <i class="fa-brands fa-html5"></i>
-                                </li>
-                                <li>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="project-buttons">
-                            <a class="btn" href="https://github.com/cinthiafontoura/cinthia-fontoura-portfolio" aria-label="Have a look at the code on GitHub (open in a new tab)" target="_blank">GitHub</a>
+                <div class="project__item--right">
+                    <div class="project__info--right">
+                        <h3 class="project__name">Portfolio</h3>
+                        <p class="project__description">This website is where I show a bit about me, the projects I've worked on and my contacts for people that want to hire me. Site build with HTML and CSS to the first project portfolio with Code Institute.</p>
+                        <ul class="project__technologies">
+                            <li>
+                                <i class="project__icon fa-brands fa-html5"></i>
+                            </li>
+                            <li>
+                                <i class="project__icon fa-brands fa-css3-alt"></i>
+                            </li>
+                        </ul>
+                        <div>
+                            <a class="btn project__btn" href="https://github.com/cinthiafontoura/cinthia-fontoura-portfolio" aria-label="Have a look at the code on GitHub (open in a new tab)" target="_blank">GitHub</a>
                         </div>                        
                     </div>
-                    <img class="project-screens" src="assets/images/portfolio.png" alt="Desktop and mobile version of this website">                   
+                    <img class="project__img" src="assets/images/portfolio.png" alt="Desktop and mobile version of this website">                   
                 </div>   
-                <div id="project-three">
-                    <div class="project-info">
-                        <h3>TinDog</h3>
-                        <p class="project-description">After the TinDog app, all dogs will fall in love. This is a website made using HTML, CSS and Bootstrap 4.0.0 during the Web Development Bootcamp with Angela Yu on Udemy.</p>
-                        <div class="project-technologies">
-                            <ul>
-                                <li>
-                                    <i class="fa-brands fa-html5"></i>
-                                </li>
-                                <li>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                </li>
-                                <li>
-                                    <i class="fa-brands fa-bootstrap"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="project-buttons">
-                            <a class="btn" href="https://cinthiafontoura.github.io/TinDog/" aria-label="Have a look at the live website (open in a new tab)" target="_blank">Live Site</a>
-                            <a class="btn" href="https://github.com/cinthiafontoura/TinDog" aria-label="Have a look at the code on GitHub (open in a new tab)" target="_blank">GitHub</a>
+                <div class="project__item--left">
+                    <div class="project__info--left">
+                        <h3 class="project__name">TinDog</h3>
+                        <p class="project__description">After the TinDog app, all dogs will fall in love. This is a website made using HTML, CSS and Bootstrap 4.0.0 during the Web Development Bootcamp with Angela Yu on Udemy.</p>
+                        <ul class="project__technologies">
+                            <li>
+                                <i class="project__icon fa-brands fa-html5"></i>
+                            </li>
+                            <li>
+                                <i class="project__icon fa-brands fa-css3-alt"></i>
+                            </li>
+                            <li>
+                                <i class="project__icon fa-brands fa-bootstrap"></i>
+                            </li>
+                        </ul>
+                        <div>
+                            <a class="btn project__btn" href="https://cinthiafontoura.github.io/TinDog/" aria-label="Have a look at the live website (open in a new tab)" target="_blank">Live Site</a>
+                            <a class="btn project__btn" href="https://github.com/cinthiafontoura/TinDog" aria-label="Have a look at the code on GitHub (open in a new tab)" target="_blank">GitHub</a>
                         </div>                        
                     </div>
-                    <img class="project-screens" src="assets/images/tindog.png" alt="Desktop and mobile version of TinDog website">                    
+                    <img class="project__img" src="assets/images/tindog.png" alt="Desktop and mobile version of TinDog website">                    
                 </div>             
             </div>            
         </section>
-        <section id="about">
-            <div class="bg-two"></div>
+        <section id="about" class="about">
+            <div class="about__bg"></div>
             <div class="container">
-                <h2>About Me</h2>
-                <div id="about-content">
-                    <img id="img-about" src="assets/images/cinthia-head.jpg" alt="Cinthia head">
-                    <div id="about-text">
-                        <p>I am a Brazilian living in Dublin with my husband and two fat cats. In Brazil as a Chef I ran my own business where I worked on my own contacting clients, baking cakes, buying the ingredients and taking care of the website and finances. I also worked in other restaurants, stores and call centres. During the lockdown, I have tried everything to keep myself busy (and don't get crazy) so I started learning more about software development, the thing that I always had an interest in but never enough time to dedicate and was when I started getting excited about the technology world and I decided to leave the kitchen after 13 years.</p>
-                        <p>The technologies that I'm working on at the moment are:</p>
+                <h2 class="about__title">About Me</h2>
+                <div class="about__content">
+                    <img class="about__img" src="assets/images/cinthia-head.jpg" alt="Cinthia head">
+                    <div class="about__info">
+                        <p class="about__description">I am a Brazilian living in Dublin with my husband and two fat cats. In Brazil as a Chef I ran my own business where I worked on my own contacting clients, baking cakes, buying the ingredients and taking care of the website and finances. I also worked in other restaurants, stores and call centres. During the lockdown, I have tried everything to keep myself busy (and don't get crazy) so I started learning more about software development, the thing that I always had an interest in but never enough time to dedicate and was when I started getting excited about the technology world and I decided to leave the kitchen after 13 years.</p>
+                        <p class="about__description">The technologies that I'm working on at the moment are:</p>
                         <ul>
                             <li>
-                                <i class="fa-brands fa-html5" title="HTML"></i>
+                                <i class="about__icon fa-brands fa-html5" title="HTML"></i>
                             </li>
                             <li>
-                                <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                                <i class="about__icon fa-brands fa-css3-alt" title="CSS"></i>
                             </li>
                             <li>
-                                <i class="fa-brands fa-sass" title="Sass"></i>
+                                <i class="about__icon fa-brands fa-sass" title="Sass"></i>
                             </li>
                             <li>
-                                <i class="fa-brands fa-js" title="JavaScript"></i>
+                                <i class="about__icon fa-brands fa-js" title="JavaScript"></i>
                             </li>
                             <li>
-                                <i class="fa-brands fa-git-alt" title="Git"></i>
+                                <i class="about__icon fa-brands fa-git-alt" title="Git"></i>
                             </li>
                             <li>
-                                <i class="fa-brands fa-github" title="GitHub"></i>
+                                <i class="about__icon fa-brands fa-github" title="GitHub"></i>
                             </li>
                             <li>
-                                <i class="fa-solid fa-terminal" title="Command line"></i>
+                                <i class="about__icon fa-solid fa-terminal" title="Command line"></i>
                             </li>
                             <li>
-                                <i class="fa-brands fa-node-js" title="Node.js"></i>
+                                <i class="about__icon fa-brands fa-node-js" title="Node.js"></i>
                             </li>
                             <li>
-                                <i class="fa-brands fa-figma" title="Figma"></i>
+                                <i class="about__icon fa-brands fa-figma" title="Figma"></i>
                             </li>
                         </ul>  
                         <br> 
@@ -168,42 +162,42 @@
                 </div>      
             </div>                 
         </section>
-        <section id="contact">
-            <div class="bg-one"></div>
+        <section id="contact" class="contact">
+            <div class="contact__bg"></div>
             <div class="container">
-                <h2>Contact Me</h2>
-                <p>I am available to work on your projects or team and bring your ideas to life. I am just a click away.</p>
-                <form action="/thank-you.html" name="contact" data-netlify="true" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="text-form" placeholder="Your Name" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="text-form" placeholder="your_email@example.com" required>
-                    <label for="msg">Message</label>
-                    <textarea name="message" id="msg" class="text-form" rows="5" placeholder="Leave your message here! :)" required></textarea>
+                <h2 class="contact__title">Contact Me</h2>
+                <p class="contact__description">I am available to work on your projects or team and bring your ideas to life. I am just a click away.</p>
+                <form class="contact__form" action="/thank-you.html" name="contact" data-netlify="true" method="POST">
+                    <label class="contact__form-lb" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="contact__form-txt" placeholder="Your Name" required>
+                    <label  class="contact__form-lb"for="email">Email</label>
+                    <input type="email" name="email" id="email" class="contact__form-txt" placeholder="your_email@example.com" required>
+                    <label  class="contact__form-lb"for="msg">Message</label>
+                    <textarea name="message" id="msg" class="contact__form-txt" rows="5" placeholder="Leave your message here! :)" required></textarea>
                     <input class="btn" type="submit" value="Send!">
                 </form>
             </div>
         </section>
         <hr>
-        <footer>
+        <footer class="social-media">
             <ul>
-                <li>
-                    <a href="https://github.com/cinthiafontoura" target="_blank" aria-label="Visit my GitHub profile (open in a new tab)">
+                <li class="social-media__item">
+                    <a class="social-media__link" href="https://github.com/cinthiafontoura" target="_blank" aria-label="Visit my GitHub profile (open in a new tab)">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/cinthiafontouras/" target="_blank" aria-label="Visit my Linkdin profile (open in a new tab)">
+                <li class="social-media__item">
+                    <a class="social-media__link" href="https://www.linkedin.com/in/cinthiafontouras/" target="_blank" aria-label="Visit my Linkdin profile (open in a new tab)">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </li>  
-                <li>
-                    <a href="mailto:cinthiafontouras@gmail.com" target="_blank" aria-label="Send me a email (open in a new tab)">
+                <li class="social-media__item">
+                    <a class="social-media__link" href="mailto:cinthiafontouras@gmail.com" target="_blank" aria-label="Send me a email (open in a new tab)">
                         <i class="fa-regular fa-envelope"></i>
                     </a>
                 </li>     
             </ul>
-            <p>&copy; 2022 Cinthia Fontoura</p> 
+            <p class="copyright">&copy; 2022 Cinthia Fontoura</p> 
         </footer>
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/ca208bcf52.js" crossorigin="anonymous"></script>
