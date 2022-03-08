@@ -122,6 +122,7 @@ The site was deployed to Netlify pages. The steps to deploy are as follows:
 ## Credits
 
 * Support of documentation in [W3schools](https://www.w3schools.com/).
+* BEM methodology in [GetBEM](http://getbem.com/introduction/).
 * Wireframe made using Figma [check here](https://www.figma.com/proto/3AfX32lUP6UvdqDZnaKQ6o/Cinthia-Fontoura-Portfolio?page-id=0%3A1&node-id=0%3A1&starting-point-node-id=1%3A2&scaling=min-zoom)
 * Icons from [Font Awesome](https://fontawesome.com/)
 * Code for the fixed navigation found on [stackoverflow](https://stackoverflow.com/questions/2861247/center-aligning-a-fixed-position-div).
