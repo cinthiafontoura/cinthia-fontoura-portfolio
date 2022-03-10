@@ -104,6 +104,12 @@
 
     .navbar {
         justify-content: center;
+        text-align: center;
+
+    }
+
+    .navbar__links {
+        justify-content: center;
     }
 
     .navbar__logo {
@@ -233,9 +239,7 @@
     .navbar {
         position: static;
         left: 0;
-        transform: translate(0, 0);  
-        width: 100%;  
-        text-align: center;    
+        transform: translate(0, 0);
     }    
 
     .navbar__items li  {                
@@ -243,8 +247,7 @@
     }
 
     .navbar__item {
-        font-size: 110%;        
-        margin-left: 0;
+        font-size: 110%;  
     }
 
     .intro {
