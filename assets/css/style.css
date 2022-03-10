@@ -62,10 +62,17 @@ li  {
     font-size: 90%;
 }
 
+.btn--ghost {
+    background: var(--color-primary-darker);
+    border: 2px solid var(--color-primary-lighter);
+    color: var(--color-primary-lighter);
+}
+
 .btn:hover {
     background: var(--color-primary-lighter);
     border: 2px solid var(--color-primary-darker);
     color: var(--color-primary-darker);
+    transition: ease .3s;
 }
 
 .btn__pagegup {
@@ -97,11 +104,11 @@ li  {
     border-radius: 50%;
     margin: 10px 0;
     opacity: 1;
-    transition: .5s ease;
 }
 
 .navbar__logo:hover {
     opacity: .7;
+    transition: ease .3s;
 }
 
 .navbar__items {
@@ -117,7 +124,9 @@ li  {
 }
 
 .navbar__item:hover {
-    color: var(--color-primary-medium);    
+    border-bottom: 2px solid var(--color-primary-medium);
+    color: var(--color-primary-medium); 
+    transition: ease .3s;
 }
 
 .navbar__items .btn {
@@ -307,6 +316,7 @@ li  {
 
 .contact__form-lb:hover {
     color: var(--color-primary);
+    transition: ease .3s;
 }
 
 .contact__form-txt {
@@ -326,6 +336,7 @@ li  {
 .contact__form-txt:hover,
 .contact__form-txt:focus-visible {
     border: 2px solid var(--color-primary);
+    transition: ease .3s;
 }
 
 .contact__form-txt::placeholder {
@@ -357,6 +368,7 @@ hr {
 
 .social-media__link:hover {
     color: var(--color-primary);
+    transition: ease .3s;
 }
 
 .copyright {
