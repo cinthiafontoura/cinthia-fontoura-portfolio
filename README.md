@@ -2,7 +2,8 @@
 
 Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a front-end software developer to joy their team and bring a project to life. Users of this site will be able to see some of my projects live and check the code, know more about me, which technologies I'm using or studying, contact me and follow me on social media and hopefully hire me!
 
-![responsive](https://user-images.githubusercontent.com/80278757/155611266-9f1e8db0-15f2-446c-ad98-30e04ae3001b.png)
+![responsive](https://user-images.githubusercontent.com/80278757/157774385-20d15644-0823-494f-ae1d-6276a7cf8513.png)
+
 
 
 ## Features
@@ -11,21 +12,24 @@ Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a f
   - Fixed navigation bar includes links to the Projects, About and Contact sections to allow easy navigation through the page. 
   - The logo make it easy back to the top of the page without scrolling up.  
   
-![navigation](https://user-images.githubusercontent.com/80278757/155013514-8c47cd24-84c4-4a9c-bd1b-780159b5e795.png)
+![navigation](https://user-images.githubusercontent.com/80278757/157774697-d9a78bc0-c8ea-4f33-9146-2790d12b46f7.png)
+
 
 
 * **The Header**
   - A quick introduction tells who I'm and what I do with a button that goes to the contact section to facilitate communication and a gif representing me. 
   - A Resume button that opens the link to my CV on a new tab showing to the user my professional path and education. 
   
-![intro](https://user-images.githubusercontent.com/80278757/155025035-8d9c2bae-3cd4-4310-ad73-65a2893d9e87.png)
+![intro](https://user-images.githubusercontent.com/80278757/157774716-ebc1b4b8-5ef6-4a84-91fd-7a1a9bdedee5.png)
 
 
 * **Projects Section**
   - A brief description of each website project, the technologies used, buttons linking to the live project and code on GitHub, and an image showing what the responsive website looks like.
   - The icons are just illustrative, all technologies are in the description.
   
-![projects](https://user-images.githubusercontent.com/80278757/155027185-aadcdb81-7d07-462a-b9d5-e0f6b580857e.png)
+![projects](https://user-images.githubusercontent.com/80278757/157774772-1af914cc-979f-4c3b-9460-a8ac84333c9f.png)
+
+
 
 
 * **About Section**
