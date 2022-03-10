@@ -8,15 +8,15 @@ Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a f
 ## Features
 
 * **Navigation**
-  - Fixed at the top of the page, the navigation bar includes links to the Projects, About and Contact sections to allow easy navigation through the page. 
-  - The logo on big screens and the arrow button on the bottom right on small screens, make it easy back to the top of the page without scrolling up using just one hand.
-  - A Resume button that opens the link to my CV archive on a new tab showing to the user my professional path and education. 
+  - Fixed navigation bar includes links to the Projects, About and Contact sections to allow easy navigation through the page. 
+  - The logo make it easy back to the top of the page without scrolling up.  
   
 ![navigation](https://user-images.githubusercontent.com/80278757/155013514-8c47cd24-84c4-4a9c-bd1b-780159b5e795.png)
 
 
 * **The Header**
   - A quick introduction tells who I'm and what I do with a button that goes to the contact section to facilitate communication and a gif representing me. 
+  - A Resume button that opens the link to my CV on a new tab showing to the user my professional path and education. 
   
 ![intro](https://user-images.githubusercontent.com/80278757/155025035-8d9c2bae-3cd4-4310-ad73-65a2893d9e87.png)
 
@@ -86,7 +86,12 @@ Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a f
 
        ![lighthouse-mobile](https://user-images.githubusercontent.com/80278757/155611357-38f4ae37-b919-4fff-825d-3aa920aaa42f.png)
 
-     
+
+### User Experience 
+  * Users got confused when the link to the live site in the Portfolio project opened the same webpage in another tab. To fix this, I removed the button of this project that gives them access only to the code on GitHub. I also change the colour of the Live Site button to provide more emphasis to the code of each project.
+  * Mobile users found it difficult to read justified text. To solve, I aligned the text to the left.
+  * I fixed the navigation bar on top of the desktop version and on the bottom for mobile to guarantee that the navigations links are easier to access by small hands. 
+
      
 ### Bugs and Errors
 
@@ -104,6 +109,7 @@ Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a f
  
  * Using a gif in the hero animation is causing damage to the performance for desktop and mobile versions, the better way to prevent this is using a video instead.
  * For the mobile performance increase is necessary to reduce the size of the images.
+ 
  
      
 ## Deployment
