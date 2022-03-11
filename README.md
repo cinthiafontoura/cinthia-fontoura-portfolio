@@ -80,7 +80,7 @@ Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a f
     - No errors were returned when passing through the Jigsaw.
   
   * **Accessibility**
-    - I confirmed that the colours and fonts chosen are easy to read, and all links, icons and images have descriptive text for screen readers running it through Lighthouse in Chrome DevTools.
+    - I confirmed that the colours have enough contrast and fonts chosen are easy to read, and all links, icons and images have descriptive text for screen readers running it through Lighthouse in Chrome DevTools.
 
     - **Desktop**
 
@@ -109,11 +109,15 @@ Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a f
   * **Unfixed**    
     - No unfixed bugs.
  
- ### Improvements to implement
- 
- * Using a gif in the hero animation is causing damage to the performance for desktop and mobile versions, the better way to prevent this is using a video instead.
- * For the mobile performance increase is necessary to reduce the size of the images.
- 
+### Improvements to the code
+  * **Implemented**
+    * Change the classes names and start using the BEM Methodology to make the code easier to follow.
+    * Reorganise all CSS elements in alphabetical order to make the maintenance faster and more logical.
+
+  * **To implement**
+    * Using a gif in the hero animation is causing damage to the performance for desktop and mobile versions, the better way to prevent this is using a video instead.
+    * For the mobile performance increase is necessary to reduce the size of the images.
+
  
      
 ## Deployment
@@ -139,3 +143,4 @@ The site was deployed to Netlify pages. The steps to deploy are as follows:
 * Colour palette create on [Addobe Color](https://color.adobe.com/create/color-wheel).
 * Images created and resized using Adobe Photoshop.
 * The images in the navigation, header and thank-you page was created using [picrew website](https://picrew.me/image_maker/338224).
+* Favicon generated on [Favicon](https://favicon.io/)
