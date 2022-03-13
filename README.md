@@ -2,6 +2,8 @@
 
 Cinthia Fontoura Portfolio is a site for those who are looking to hire me as a front-end software developer to joy their team and bring a project to life. Users of this site will be able to see some of my projects live and check the code, know more about me, which technologies I'm using or studying, contact me and follow me on social media and hopefully hire me!
 
+The live website can be found here [Cinthia Fontoura Portfolio](https://cinthia-fontoura-portfolio.netlify.app/).
+
 ![responsive](https://user-images.githubusercontent.com/80278757/157774385-20d15644-0823-494f-ae1d-6276a7cf8513.png)
 
 
